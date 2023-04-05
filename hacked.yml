@@ -1,0 +1,5 @@
+file-remote-contents:
+  check: File_Contents
+  options:
+    regex: .*(file_put_contents|file_get_contents|curl_exec).*
+    only_wp_content: true
