@@ -1,0 +1,31 @@
+core-verify-checksums:
+	check: Core_Verify_Checksums
+autoload-options-size:
+	check: Autoload_Options_Size
+	options:
+		threshold_kb: 1024
+constant-savequeries-falsy:
+	check: Constant_Definition
+	options:
+		constant: SAVEQUERIES
+		falsy: true
+constant-disallow-file-edit-true:
+	check: Constant_Definition
+	options:
+		constant: DISALLOW_FILE_EDIT
+		value: true
+plugin-file-manager-uninstalled:
+	check: Plugin_Status
+	options:
+		name: file-manager
+		status: uninstalled
+plugin-fileorganizer-uninstalled:
+	check: Plugin_Status
+	options:
+		name: fileorganizer
+		status: uninstalled
+plugin-filebird-uninstalled:
+	check: Plugin_Status
+	options:
+		name: filebird
+		status: uninstalled
