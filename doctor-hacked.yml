@@ -2,14 +2,14 @@ file-remote-contents:
   check: File_Contents
   options:
     regex: .*(file_put_contents|file_get_contents|curl_exec).*
-    only_wp_content: true
+    only_wp_content: false
 file-rot13:
   check: File_Contents
   options:
     regex: .*(str_rot13|ignore_user_abort).*
-    only_wp_content: true
+    only_wp_content: false
  file-eval:
   check: File_Contents
   options:
     regex: .*(base64|eval).*
-    only_wp_content: true
+    only_wp_content: false
